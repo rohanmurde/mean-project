@@ -1,0 +1,26 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon server.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "chalk": "^4.1.0",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "express-handlebars": "^4.0.4",
+        "jsonwebtoken": "^8.5.1",
+        "mongoose": "^5.9.18",
+        "nodemon": "^2.0.4",
+        "postman-request": "^2.88.1-postman.27",
+        "validator": "^13.1.17",
+        "yargs": "^16.1.1"
+    }
+}
