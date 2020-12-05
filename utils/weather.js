@@ -12,7 +12,7 @@ const forecast = (lat, long, location, callback) => {
         } else if (res.body.error) {
             callback('Unable to find weather for your location', undefined)
         } else {
-            callback('', 'It is ' + res.body.current.weather_descriptions[0] + ' in ' + location + '. It is currently ' + res.body.current.temperature + ' degree celcius. The wind speed is ' + res.body.current.wind_speed + ' mps.')
+            callback('', 'It is ' + res.body.current.weather_descriptions[0] + ' in ' + location + '. It is currently ' + res.body.current.temperature + ' degree celcius. The wind speed is ' + res.body.current.wind_speed + ' kmph.')
         }
     })
 
