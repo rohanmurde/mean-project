@@ -5,8 +5,7 @@ const cors = require('cors');
 const expressHandlebars = require('express-handlebars');
 const connection = require('./model');
 const api = require('./routes/api');
-const port = 3000;
-
+const port = process.env.PORT || 3000; // process.env.PORT is for Heroku server's dynamic port
 const app = express();
 
 // use is used to customize express web server
@@ -37,5 +36,5 @@ app.get('*', (req, res) => {
 
 // express server begins listening for request in the browser
 app.listen(port, () => {
-    console.log("Server is running on localhost:" + port);
+    console.log("Server is running on port: " + port);
 });
